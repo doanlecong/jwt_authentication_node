@@ -1,0 +1,26 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRG9hbiIsImlhdCI6MTYwNzEwMDgxMiwiZXhwIjoxNjA3MTAwODI3fQ.Sg5EmYCtDJh4z84FyiPiAdnm7F9OC5-vDurO9cEhCe8
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token" : "",
+}
+
+###
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRG9hbiIsImlhdCI6MTYwNzEwMDk3MH0.FyJ54xlBg-vWT98jEvXBk4KDSAfUUdmX_rkApnQdY9k"
+}
+
+###
+POST http://localhost:4000/login 
+Content-Type: application/json
+
+{
+    "username" : "Doan"
+}
